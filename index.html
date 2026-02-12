@@ -1,73 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>AliouMarket</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aliou Collection | Ensemble Femme Chic</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    text-align: center;
+}
+header {
+    background: black;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hero {
+    background: #eaeaea;
+    padding: 30px 15px;
+}
+.hero h1 {
+    margin-bottom: 10px;
+}
+.price {
+    color: #e63946;
+    font-size: 28px;
+    font-weight: bold;
+}
+.product img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.section {
+    padding: 25px 15px;
+    background: white;
+    margin-top: 10px;
+}
+.button {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 15px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.whatsapp {
+    background: #25D366;
+}
+.badge {
+    background: #ff0000;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.review {
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+}
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: black;
+    color: white;
+    font-size: 14px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <div class="logo">Aliou<span>Market</span></div>
-
-    <input type="text" placeholder="Rechercher un produit...">
-
-    <div class="cart">
-        🛒 <span id="cart-count">0</span>
-    </div>
+Aliou Collection
 </header>
 
-<nav>
-    <ul>
-        <li>Vêtements</li>
-        <li>Cosmétiques</li>
-        <li>Chaussures</li>
-        <li>Accessoires</li>
-    </ul>
-</nav>
+<div class="hero">
+<h1>Ensemble 2 Pièces Casual Chic 2026</h1>
+<p>Paiement à la livraison partout au Maroc</p>
+<p class="price">299 DH</p>
+<div class="badge">🔥 Plus que 8 pièces en stock</div>
+</div>
 
-<section class="hero">
-    <h1>Bienvenue sur AliouMarket</h1>
-    <p>Les meilleures offres vêtements & cosmétiques au Maroc</p>
-</section>
+<div class="product section">
+<img src="https://via.placeholder.com/400x500" alt="Ensemble Femme">
+</div>
 
-<section class="products">
+<div class="section">
+<h2>Pourquoi choisir cet ensemble ?</h2>
+<p>✔️ Tissu confortable et élégant</p>
+<p>✔️ Coupe moderne qui affine la silhouette</p>
+<p>✔️ Idéal pour sorties, travail ou événements</p>
+<p>✔️ Disponible en Beige, Noir, Kaki</p>
+</div>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <h3>T-shirt Premium</h3>
-        <p>120 DH</p>
-        <button onclick="addToCart()">Ajouter au panier</button>
-    </div>
+<div class="section">
+<h2>Avis clientes</h2>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <h3>Parfum Luxe</h3>
-        <p>250 DH</p>
-        <button onclick="addToCart()">Ajouter au panier</button>
-    </div>
+<div class="review">
+⭐⭐⭐⭐⭐  
+"Qualité incroyable pour le prix 😍 Livraison rapide" – Salma R.
+</div>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <h3>Baskets Sport</h3>
-        <p>380 DH</p>
-        <button onclick="addToCart()">Ajouter au panier</button>
-    </div>
+<div class="review">
+⭐⭐⭐⭐⭐  
+"Taille parfaite et très stylé !" – Imane B.
+</div>
 
-</section>
+<div class="review">
+⭐⭐⭐⭐⭐  
+"Je recommande, je vais commander une autre couleur" – Sara M.
+</div>
+
+</div>
+
+<a class="button whatsapp" 
+href="https://wa.me/212710908592?text=Bonjour%20je%20veux%20commander%20l'ensemble%202%20pii%C3%A8ces%20Casual%20Chic%20%C3%A0%20299DH" 
+target="_blank">
+Commander sur WhatsApp
+</a>
+
+<div class="section">
+<h3>🚚 Livraison rapide 24–48h</h3>
+<p>💵 Paiement à la livraison</p>
+<p>🔄 Retour possible sous 48h</p>
+</div>
 
 <footer>
-    <p>© 2026 AliouMarket - Tous droits réservés</p>
+© 2026 Aliou Collection - Tous droits réservés
 </footer>
-
-<script>
-let count = 0;
-
-function addToCart() {
-    count++;
-    document.getElementById("cart-count").innerText = count;
-}
-</script>
 
 </body>
 </html>
