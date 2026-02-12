@@ -3,148 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aliou Collection | Ensemble Femme Chic</title>
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f8f8f8;
-    text-align: center;
-}
-header {
-    background: black;
-    color: white;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
-}
-.hero {
-    background: #eaeaea;
-    padding: 30px 15px;
-}
-.hero h1 {
-    margin-bottom: 10px;
-}
-.price {
-    color: #e63946;
-    font-size: 28px;
-    font-weight: bold;
-}
-.product img {
-    width: 90%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-.section {
-    padding: 25px 15px;
-    background: white;
-    margin-top: 10px;
-}
-.button {
-    display: block;
-    width: 90%;
-    max-width: 400px;
-    margin: 15px auto;
-    padding: 15px;
-    background: black;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 8px;
-}
-.whatsapp {
-    background: #25D366;
-}
-.badge {
-    background: #ff0000;
-    color: white;
-    padding: 8px;
-    display: inline-block;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.review {
-    background: #f1f1f1;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-}
-footer {
-    margin-top: 20px;
-    padding: 15px;
-    background: black;
-    color: white;
-    font-size: 14px;
-}
-</style>
+<title>Aliou Premium Dakar Afro</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-Aliou Collection
+<h1>Aliou Premium Dakar Afro</h1>
+<p>Élégance Africaine Moderne au Maroc</p>
 </header>
 
-<div class="hero">
-<h1>Ensemble 2 Pièces Casual Chic 2026</h1>
+<nav>
+<a href="#femme">Collection Femme</a>
+<a href="#homme">Collection Homme</a>
+<a href="#apropos">À propos</a>
+<a href="#contact">Commander</a>
+</nav>
+
+<section class="hero">
+<h2>La nouvelle référence Afro Chic au Maroc</h2>
+<p>Importé du Sénégal – Exclusif – Premium</p>
+<button onclick="scrollToProducts()">Découvrir la collection</button>
+</section>
+
+<section id="femme" class="products">
+<h2>Collection Femme</h2>
+
+<div class="product">
+<img src="femme1.jpg" alt="Ensemble Femme">
+<h3>Ensemble Femme Afro Chic</h3>
+<p>299 DH</p>
+<select>
+<option>Choisir Taille</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+<button>Ajouter au panier</button>
+</div>
+
+</section>
+
+<section id="homme" class="products">
+<h2>Collection Homme</h2>
+
+<div class="product">
+<img src="homme1.jpg" alt="Ensemble Homme">
+<h3>Ensemble Homme Dakar Style</h3>
+<p>349 DH</p>
+<select>
+<option>Choisir Taille</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+</select>
+<button>Ajouter au panier</button>
+</div>
+
+</section>
+
+<section id="apropos" class="about">
+<h2>Notre Histoire</h2>
+<p>
+Aliou Premium Dakar Afro est une marque qui importe des ensembles africains premium
+directement du Sénégal vers le Maroc.
+Notre mission : proposer une mode africaine élégante, moderne et unique.
+</p>
+</section>
+
+<section id="contact" class="contact">
+<h2>Commander Maintenant</h2>
 <p>Paiement à la livraison partout au Maroc</p>
-<p class="price">299 DH</p>
-<div class="badge">🔥 Plus que 8 pièces en stock</div>
-</div>
-
-<div class="product section">
-<div class="product section">
-<img src="ensemble1.jpg" alt="Ensemble Femme Vue 1">
-<img src="ensemble2.jpg" alt="Ensemble Femme Vue 2">
-<img src="ensemble3.jpg" alt="Ensemble Femme Vue 3">
-</div>
-</div>
-
-<div class="section">
-<h2>Pourquoi choisir cet ensemble ?</h2>
-<p>✔️ Tissu confortable et élégant</p>
-<p>✔️ Coupe moderne qui affine la silhouette</p>
-<p>✔️ Idéal pour sorties, travail ou événements</p>
-<p>✔️ Disponible en Beige, Noir, Kaki</p>
-</div>
-
-<div class="section">
-<h2>Avis clientes</h2>
-
-<div class="review">
-⭐⭐⭐⭐⭐  
-"Qualité incroyable pour le prix 😍 Livraison rapide" – Salma R.
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐  
-"Taille parfaite et très stylé !" – Imane B.
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐  
-"Je recommande, je vais commander une autre couleur" – Sara M.
-</div>
-
-</div>
-
-<a class="button whatsapp" 
-href="https://wa.me/212710908592?text=Bonjour%20je%20veux%20commander%20l'ensemble%202%20pii%C3%A8ces%20Casual%20Chic%20%C3%A0%20299DH" 
-target="_blank">
-Commander sur WhatsApp
-</a>
-
-<div class="section">
-<h3>🚚 Livraison rapide 24–48h</h3>
-<p>💵 Paiement à la livraison</p>
-<p>🔄 Retour possible sous 48h</p>
-</div>
+<button>Commander via WhatsApp</button>
+</section>
 
 <footer>
-© 2026 Aliou Collection - Tous droits réservés
+<p>© 2026 Aliou Premium Dakar Afro - Tous droits réservés</p>
 </footer>
+
+<script>
+function scrollToProducts() {
+document.getElementById("femme").scrollIntoView({ behavior: "smooth" });
+}
+</script>
 
 </body>
 </html>
-
