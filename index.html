@@ -2,40 +2,63 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Aliou Collection</title>
+    <title>Aliou Market</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Aliou Collection</h1>
-    <p>Élégance • Style • Beauté</p>
-    <a href="#produits" class="btn">Voir les produits</a>
+    <div class="logo">Aliou<span>Market</span></div>
+
+    <input type="text" placeholder="Rechercher un produit...">
+
+    <div class="cart">
+        🛒 <span id="cart-count">0</span>
+    </div>
 </header>
 
-<section id="produits">
-    <h2>👕 Vêtements</h2>
+<nav>
+    <ul>
+        <li>Vêtements</li>
+        <li>Cosmétiques</li>
+        <li>Chaussures</li>
+        <li>Accessoires</li>
+    </ul>
+</nav>
 
-    <div class="product">
-        <img src="https://via.placeholder.com/250" alt="Vêtement">
+<section class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
         <h3>T-shirt Premium</h3>
-        <p>199 MAD</p>
-        <a href="https://wa.me/212710908592" class="whatsapp">Commander</a>
+        <p>120 DH</p>
+        <button onclick="addToCart()">Ajouter au panier</button>
     </div>
 
-    <h2>🧴 Cosmétiques</h2>
-
-    <div class="product">
-        <img src="https://via.placeholder.com/250" alt="Cosmétique">
-        <h3>Crème Beauté</h3>
-        <p>149 MAD</p>
-        <a href="https://wa.me/212710908592" class="whatsapp">Commander</a>
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h3>Parfum Luxe</h3>
+        <p>250 DH</p>
+        <button onclick="addToCart()">Ajouter au panier</button>
     </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h3>Baskets Sport</h3>
+        <p>380 DH</p>
+        <button onclick="addToCart()">Ajouter au panier</button>
+    </div>
+
 </section>
 
-<footer>
-    <p>© 2026 Aliou Collection | Contact WhatsApp</p>
-</footer>
+<script>
+let count = 0;
+
+function addToCart() {
+    count++;
+    document.getElementById("cart-count").innerText = count;
+}
+</script>
 
 </body>
 </html>
